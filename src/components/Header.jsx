@@ -9,7 +9,7 @@ const Header = () => {
           {/* this image for desktop */}
           <img
             className="  bg-cover transition-transform duration-500 hover:scale-110 w-full hidden md:flex   md:h-[500px] "
-            src="/1.jpg"
+            src="src\assets\1.jpg"
             alt="homepage image"
           />
           <img
