@@ -1,17 +1,14 @@
 import React from "react";
 
 const CenterSection = () => {
-  const data = [
+  const images = [
     "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.36.50%20(1).jpeg",
     "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.37.00.jpeg",
     "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.37.09.jpeg",
-    "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.37.09.jpeg",
-    "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.37.32.jpeg",
-    "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.37.32.jpeg",
     "https://hilarious-klepon-3f94ec.netlify.app/WhatsApp%20Image%202025-04-26%20at%2012.37.32.jpeg",
   ];
 
-  const dinningData = [
+  const diningData = [
     {
       meal: "Breakfast",
       time: "7:30 AM – 10:30 AM",
@@ -35,7 +32,6 @@ const CenterSection = () => {
     {
       meal: "Dinner",
       time: "7:00 PM – 10:30 PM",
-      icon: "MdOutlineNightlightRound",
       details: [
         "Multi-cuisine buffet with themed nights",
         "Live grill and tandoor counter",
@@ -44,45 +40,46 @@ const CenterSection = () => {
       ],
     },
   ];
+
   return (
-    <div className=" mx-3.5 md:mx-20">
-      <div>
-        <h1 className="text-2xl  font-bold mb-4">Our Menus</h1>
-        {/* this empty div for adding border */}
-        <div className="h-1 bg-amber-200 mx-5 w-15"></div>
-        <div className="grid md:grid-cols-4 gap-6  ">
-          {data.map((image, index) => (
+    <div className="mx-4 md:mx-20 my-10">
+      <section className="mb-12">
+        <h1 className="text-2xl font-bold mb-2">Our Menus</h1>
+        <div className="h-1 bg-amber-200 w-20 mb-6"></div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {images.map((src, index) => (
             <img
               key={index}
-              src={image}
-              className="rounded-2xl transform-transform   hover:-translate-y-2 shadow-b-black shadow  "
+              src={src}
+              alt={`menu-image-${index}`}
+              className="rounded-2xl transform transition-transform duration-300 hover:-translate-y-2 shadow"
             />
           ))}
         </div>
-      </div>
-      <div className="">
-        <h1 className="text-2xl  font-bold mb-4">Dining Experience</h1>
-        <div className="h-1 bg-amber-200 mx-5 w-15"></div>
-        <div className="">
-          {dinningData.map((index, id) => (
+      </section>
+
+      <section>
+        <h1 className="text-2xl font-bold mb-2">Dining Experience</h1>
+        <div className="h-1 bg-amber-200 w-20 mb-6"></div>
+        <div className="space-y-6">
+          {diningData.map((meal, index) => (
             <div
-              key={id}
-              className="border, bg-[#c1a717] rounded-2xl  text-red-900 p-5.5 shadow my-10"
+              key={index}
+              className="bg-[#c1a717] text-red-900 rounded-2xl p-5 shadow"
             >
-              <h1 className="font-semibold m-2.5 text-green-950 text-xl ">
-                {" "}
-                {index.meal}{" "}
-              </h1>
-              <h1 className="m-2.5">{index.time}</h1>
-              <div>
-                {index.details.map((list) => (
-                  <li key={list}>{list}</li>
+              <h2 className="text-xl font-semibold text-green-950 mb-1">
+                {meal.meal}
+              </h2>
+              <p className="mb-2">{meal.time}</p>
+              <ul className="list-disc list-inside space-y-1">
+                {meal.details.map((item, idx) => (
+                  <li key={idx}>{item}</li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
-      </div>{" "}
+      </section>
     </div>
   );
 };

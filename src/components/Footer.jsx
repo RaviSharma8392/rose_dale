@@ -5,45 +5,50 @@ import { MdCall, MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#B22222]  text-[#F0F0F0]">
-      <div className="items-center md:mx-150 py-7">
-        <h1 className="uppercase mx-20 md:mx-25 font-bold md:m-3.5">
-          COntact Info
-        </h1>
-        <h3 className=" flex  m-3.5">
-          <span>
-            <MdCall className="m-1" />
-          </span>
-          +91-8477860189, +91-9259003340
-        </h3>
-        <h3 className=" m-3.5 flex">
-          <span>
-            <MdOutlineEmail className="m-1" />
-          </span>
-          rosedalebhimtal@gmail.com
-        </h3>
-        <h3 className="flex   m-3.5  ">
-          <span>
-            <FaLocationDot className="m-1" />
-          </span>
-          Bhawali Kainchi Dham Rd, Bhimtal, Nainital Uttarakhand
-        </h3>
-        <div className="flex   list-none m-3.5  gap-3.5">
-          <li>
-            <FaFacebookF className=" hover:text-[#FFD700] transition-all duration-300" />
-          </li>
-          <li>
-            <FaInstagram className=" hover:text-[#FFD700] transition-all duration-300" />
-          </li>
-          <li>
-            <FaTwitter className=" hover:text-[#FFD700] transition-all duration-300" />
-          </li>
+    <footer className="bg-[#B22222] text-[#F0F0F0]">
+      <div className="max-w-7xl mx-auto py-10 px-6 md:px-12">
+        <h1 className="uppercase font-bold text-xl mb-5">Contact Info</h1>
+
+        <div className="space-y-4 text-sm md:text-base">
+          <div className="flex items-center gap-2">
+            <MdCall />
+            <span>+91-8477860189, +91-9259003340</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <MdOutlineEmail />
+            <span>rosedalebhimtal@gmail.com</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <FaLocationDot />
+            <span>Bhawali Kainchi Dham Rd, Bhimtal, Nainital, Uttarakhand</span>
+          </div>
         </div>
+
+        <ul className="flex gap-4 mt-6 list-none">
+          <li>
+            <a href="#" aria-label="Facebook">
+              <FaFacebookF className="hover:text-[#FFD700] transition-all duration-300" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram">
+              <FaInstagram className="hover:text-[#FFD700] transition-all duration-300" />
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter">
+              <FaTwitter className="hover:text-[#FFD700] transition-all duration-300" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div className=" flex  justify-center">
-        <p className="pb-6"> © 2025 ALIADO. All Rights Reserved.</p>
+
+      <div className="text-center text-xs pb-6">
+        © 2025 ALIADO. All Rights Reserved.
       </div>
-    </div>
+    </footer>
   );
 };
 
