@@ -4,7 +4,6 @@ const About = () => {
   return (
     <div className="px-6 py-12 md:py-20 md:px-28">
       <div className="flex flex-col md:flex-row gap-10 items-start">
-        {/* Image section */}
         <img
           className="w-full md:w-[50%] h-auto rounded-lg object-cover"
           src="https://rosedalebhimtal.com/assets/images/about/3.jpg"
