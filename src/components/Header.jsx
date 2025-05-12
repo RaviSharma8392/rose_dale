@@ -26,7 +26,7 @@ const Header = () => {
           <h4 className="flex text-[#FFD700] mx-4 my-2 uppercase text-sm md:text-4xl md:my-3 font-semibold md:font-bold font-[poppins]">
             Your Gateway to Serene Escapes
           </h4>
-          <h1 className="uppercase text-xl mx-8 md:mx-55 font-[poppins] font-bold text-white m-3.5">
+          <h1 className="uppercase text-xl mx-15 md:mx-55 font-[poppins] font-bold text-white m-3.5">
             Hotel Rose Dale
           </h1>
           <h3 className="font-semibold md:text-xl text-sm md:mx-40 md:text-white">
@@ -36,19 +36,22 @@ const Header = () => {
       </div>
 
       <div className="md:flex items-center md:m-3.5 py-[15px] mx-[23px] md:gap-5 md:p-2 justify-center m-2.5">
-        <button className="bg-[#B22222] mx-8 px-[50px] py-[10px] md:text-[16px] flex border rounded-full md:p-5 transition-all duration-300 text-[#FFFFFF] hover:text-[#B22222] hover:bg-[#FFD700]">
-          <span className="m-1">
-            <MdCall />
-          </span>
-          Call To Order
-        </button>
-
-        <button className="bg-[#B22222] my-3 mx-3.5 px-[50px] py-[10px] hover:text-[#B22222] transition-all duration-300 md:text-[16px] flex border rounded-full md:p-6 text-[#FFFFFF] hover:bg-[#FFD700]">
-          <span className="m-1">
-            <MdOutlineWhatsapp />
-          </span>
-          WhatsApp Inquiry
-        </button>
+        <a href="tel:+91-8477860189">
+          <button className="bg-[#B22222] mx-8 px-[50px] py-[10px] md:text-[16px] flex border rounded-full md:p-5 transition-all duration-300 text-[#FFFFFF] hover:text-[#B22222] hover:bg-[#FFD700]">
+            <span className="m-1">
+              <MdCall />
+            </span>
+            Call To Order
+          </button>
+        </a>
+        <a href="https://wa.me/918477860189">
+          <button className="bg-[#B22222] my-3 mx-8  px-[34px] py-[10px] hover:text-[#B22222] transition-all duration-300 md:text-[16px] flex border rounded-full md:p-6 text-[#FFFFFF] hover:bg-[#FFD700]">
+            <span className="m-1">
+              <MdOutlineWhatsapp />
+            </span>
+            WhatsApp Inquiry
+          </button>
+        </a>
       </div>
     </div>
   );

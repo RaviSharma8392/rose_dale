@@ -28,18 +28,19 @@ const Footer = () => {
 
         <ul className="flex gap-4 mt-6 list-none">
           <li>
-            <a href="#" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/61561481416349/videos/rose-dale-bhimtal/1039259520945861/"
+              aria-label="Facebook"
+            >
               <FaFacebookF className="hover:text-[#FFD700] transition-all duration-300" />
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/_rosedale_bhimtal/"
+              aria-label="Instagram"
+            >
               <FaInstagram className="hover:text-[#FFD700] transition-all duration-300" />
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Twitter">
-              <FaTwitter className="hover:text-[#FFD700] transition-all duration-300" />
             </a>
           </li>
         </ul>
