@@ -4,51 +4,55 @@ import heroImage from "../assets/1.jpg";
 
 const Header = () => {
   return (
-    <div>
-      <div className="relative">
-        <div>
+    <div className="font-[poppins]">
+      {/* Hero Section */}
+      <div className="relative overflow-hidden">
+        {/* Background Image with Gradient Overlay */}
+        <div className="relative">
           {/* Image for desktop */}
           <img
-            className="bg-cover transition-transform duration-500 hover:scale-110 w-full hidden md:flex md:h-[500px]"
+            className="w-full h-[300px] md:h-[600px] object-cover transition-all duration-700 hover:scale-105"
             src={heroImage}
-            alt="homepage"
+            alt="Hotel Rose Dale"
+            loading="eager"
           />
 
-          {/* Image for mobile */}
-          <img
-            className="md:hidden transition-transform duration-500 hover:scale-110"
-            src="https://rosedalebhimtal.com/assets/images/gallery/2.jpg"
-            alt="homepage mobile"
-          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20"></div>
         </div>
 
-        <div className="text-white top-1/6 mx-6 md:mx-100 absolute">
-          <h4 className="flex text-[#FFD700] mx-4 my-2 uppercase text-sm md:text-4xl md:my-3 font-semibold md:font-bold font-[poppins]">
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-20 text-white">
+          <h4 className="text-gold-400 text-sm md:text-2xl uppercase tracking-wider mb-2 animate-fadeIn">
             Your Gateway to Serene Escapes
           </h4>
-          <h1 className="uppercase text-xl mx-15 md:mx-55 font-[poppins] font-bold text-white m-3.5">
-            Hotel Rose Dale
+          <h1 className="text-3xl md:text-6xl font-bold uppercase mb-3 animate-fadeIn delay-100">
+            Hotel <span className="text-gold-400">Rose Dale</span>
           </h1>
-          <h3 className="font-semibold md:text-xl text-sm md:mx-40 md:text-white">
+          <div className="w-16 h-1 bg-gold-400 my-4 animate-growWidth"></div>
+          <h3 className="text-sm md:text-xl font-medium max-w-md animate-fadeIn delay-200">
             Bhawali Kainchi Dham Rd, Bhimtal, Nainital
           </h3>
         </div>
       </div>
 
-      <div className="md:flex items-center md:m-3.5 py-[15px] mx-[23px] md:gap-5 md:p-2 justify-center m-2.5">
-        <a href="tel:+91-8477860189">
-          <button className="bg-[#B22222] mx-8 px-[50px] py-[10px] md:text-[16px] flex border rounded-full md:p-5 transition-all duration-300 text-[#FFFFFF] hover:text-[#B22222] hover:bg-[#FFD700]">
-            <span className="m-1">
-              <MdCall />
-            </span>
+      {/* Action Buttons */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-6 px-4 bg-gray-100">
+        <a
+          href="tel:+91-8899990888"
+          className="w-full md:w-auto transition-transform hover:scale-105"
+        >
+          <button className="flex items-center justify-center gap-2 w-full bg-[#B22222] hover:bg-[#8B1A1A] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+            <MdCall className="text-xl" />
             Call To Order
           </button>
         </a>
-        <a href="https://wa.me/918477860189">
-          <button className="bg-[#B22222] my-3 mx-8  px-[34px] py-[10px] hover:text-[#B22222] transition-all duration-300 md:text-[16px] flex border rounded-full md:p-6 text-[#FFFFFF] hover:bg-[#FFD700]">
-            <span className="m-1">
-              <MdOutlineWhatsapp />
-            </span>
+        <a
+          href="https://wa.me/918899990888"
+          className="w-full md:w-auto transition-transform hover:scale-105"
+        >
+          <button className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#1DA851] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+            <MdOutlineWhatsapp className="text-xl" />
             WhatsApp Inquiry
           </button>
         </a>
