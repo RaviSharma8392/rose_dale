@@ -2,21 +2,19 @@ import React from "react";
 
 const CenterSection = () => {
   const images = [
-    "/menu images/Menu Card-Mallitap-Curved_page-0001.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0002.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0003.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0002.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0004.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0005.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0006.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0007.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0008.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0009.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0010.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0011.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0012.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0013.jpg",
-    "/menu images/Menu Card-Mallitap-Curved_page-0014.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055227/MenuCard-Mallitap-Curved_page-0001_methnb.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055266/MenuCard-Mallitap-Curved_page-0002_kce13y.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055298/MenuCard-Mallitap-Curved_page-0003_txen4z.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055333/MenuCard-Mallitap-Curved_page-0005_dmyd4q.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055394/MenuCard-Mallitap-Curved_page-0006_e49tdz.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055438/MenuCard-Mallitap-Curved_page-0008_wgmixk.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055495/MenuCard-Mallitap-Curved_page-0009_ketimy.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055600/MenuCard-Mallitap-Curved_page-0010_ddchhy.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055725/MenuCard-Mallitap-Curved_page-0011_sfrte4.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055934/MenuCard-Mallitap-Curved_page-0012_dyawbm.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055970/MenuCard-Mallitap-Curved_page-0004_cmwfru.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055999/MenuCard-Mallitap-Curved_page-0013_vdm96r.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749056030/MenuCard-Mallitap-Curved_page-0014_aqprxy.jpg"
   ];
 
   return (
