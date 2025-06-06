@@ -36,24 +36,36 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Action Buttons */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-6 px-4 bg-gray-100">
-        <a
-          href="tel:+91-8899990888"
-          className="w-full md:w-auto transition-transform hover:scale-105"
-        >
-          <button className="flex items-center justify-center gap-2 w-full bg-[#B22222] hover:bg-[#8B1A1A] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
-            <MdCall className="text-xl" />
-            Call To Order
+      {/* Buttons Section */}
+      <div
+        className="flex flex-col md:flex-row items-center justify-center gap-4 py-6 px-4"
+        style={{ backgroundColor: "#F5F5F0" }}
+      >
+        <a className="w-full md:w-auto flex flex-col md:flex-row gap-4">
+          {/* Call +999 */}
+          <button
+            className="flex items-center justify-center gap-2 w-full font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+            style={{
+              backgroundColor: "#6B4226",
+              color: "#FFFFFF",
+              border: "2px solid #8B5A2B",
+            }}
+          >
+            <MdCall className="text-xl text-white" />
+            <span className="whitespace-nowrap text-white">Call +999</span>
           </button>
-        </a>
-        <a
-          href="https://wa.me/918899990888"
-          className="w-full md:w-auto transition-transform hover:scale-105"
-        >
-          <button className="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#1DA851] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
-            <MdOutlineWhatsapp className="text-xl" />
-            WhatsApp Inquiry
+
+          {/* Call +1 */}
+          <button
+            className="flex items-center justify-center gap-2 w-full font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+            style={{
+              backgroundColor: "#6B4226",
+              color: "#FFFFFF",
+              border: "2px solid #8B5A2B",
+            }}
+          >
+            <MdCall className="text-xl text-white" />
+            <span className="whitespace-nowrap text-white">Call +1</span>
           </button>
         </a>
       </div>
