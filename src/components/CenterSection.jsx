@@ -14,7 +14,7 @@ const CenterSection = () => {
     "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055934/MenuCard-Mallitap-Curved_page-0012_dyawbm.jpg",
     "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055970/MenuCard-Mallitap-Curved_page-0004_cmwfru.jpg",
     "https://res.cloudinary.com/djrjt69jl/image/upload/v1749055999/MenuCard-Mallitap-Curved_page-0013_vdm96r.jpg",
-    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749056030/MenuCard-Mallitap-Curved_page-0014_aqprxy.jpg",
+    "https://res.cloudinary.com/djrjt69jl/image/upload/v1749056030/MenuCard-Mallitap-Curved_page-0014_aqprxy.jpg"
   ];
 
   return (
