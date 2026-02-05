@@ -39,8 +39,7 @@ const Header = () => {
       {/* Buttons Section */}
       <div
         className="flex flex-col md:flex-row items-center justify-center gap-4 py-6 px-4"
-        style={{ backgroundColor: "#F5F5F0" }}
-      >
+        style={{ backgroundColor: "#F5F5F0" }}>
         <a className="w-full md:w-auto flex flex-col md:flex-row gap-4">
           {/* Call +999 */}
           <button
@@ -49,10 +48,9 @@ const Header = () => {
               backgroundColor: "#6B4226",
               color: "#FFFFFF",
               border: "2px solid #8B5A2B",
-            }}
-          >
+            }}>
             <MdCall className="text-xl text-white" />
-            <span className="whitespace-nowrap text-white">Call +999</span>
+            <span className="whitespace-nowrap text-white">Call +111</span>
           </button>
 
           {/* Call +1 */}
@@ -62,10 +60,9 @@ const Header = () => {
               backgroundColor: "#6B4226",
               color: "#FFFFFF",
               border: "2px solid #8B5A2B",
-            }}
-          >
+            }}>
             <MdCall className="text-xl text-white" />
-            <span className="whitespace-nowrap text-white">Call +1</span>
+            <span className="whitespace-nowrap text-white">Call +9</span>
           </button>
         </a>
       </div>
